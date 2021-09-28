@@ -23,9 +23,9 @@ public class EmployeeService {
 
 	public Page<EmployeeDTO> findAllPaged(Pageable pageable) {
 		
-		Page<Employee> list = repository.findAll(pageable);
+		Page<Employee> page = repository.findAll(pageable);
 
-		return list.map(x -> new EmployeeDTO(x));
+		return page.map(x -> new EmployeeDTO(x));
 	}
 
 	public EmployeeDTO insert(EmployeeDTO dto) {

@@ -1,11 +1,13 @@
 package com.devsuperior.bds01.dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.devsuperior.bds01.entities.Department;
 
-public class DepartmentDTO {
+public class DepartmentDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	
 	public Long id;
