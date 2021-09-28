@@ -39,7 +39,6 @@ public class EmployeeService {
 	private void copyDtoToEntity(EmployeeDTO dto, Employee entity) {
 		entity.setName(dto.getName());
 		entity.setEmail(dto.getEmail());
-		entity.setId(dto.getId());
 		
 		DepartmentDTO depDTO = new DepartmentDTO();
 		depDTO.setId(dto.getDepartmentId());
